@@ -1,0 +1,315 @@
+/* Colors chosen from Coolors Check Link here: https://coolors.co/784f41-f0f8ff-45b1e8-04080f-0b3142 */
+
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding: 0;
+    font-family: "Atkinson Hyperlegible Next", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #04080F;
+    overflow-x: hidden;
+}
+
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+/* 
+*********NAVIGATION*********
+ */
+ nav {
+ background-color: #784F41;
+    color: #F0F8FF;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Spread out items */
+    gap: 1rem;
+    width: 100%;
+}
+
+/* Logo*/
+.logo {
+    width: 110px;
+    height: 70px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Back To home */
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #F0F8FF;
+    text-decoration: none;
+    margin-left: 1rem;
+}
+
+/* Search Bar */
+.search-bar { 
+    flex: 2; 
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.search-bar form {
+    width: 100%; 
+    max-width: 600px; 
+    display: flex;
+    align-items: center;
+    background: rgba(255,255,255,0.2);
+    border-radius:60px ;
+    padding: 5px 10px;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border: 0;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    width: 100%;
+    background: transparent  ;
+    color: #F0F8FF;
+}
+
+.search-bar button{
+    padding-right: 1em;
+    border: none;
+    background: transparent; 
+    color: #F0F8FF;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.search-bar input::placeholder{
+    color: #F0F8FF;
+}
+
+/* Shopping Icon */
+.shopping-icon {
+    display: flex;
+    align-items: center;
+    background-color: #784F41;
+}
+
+.shopping-icon i {
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+/*********NAVIGATION ENDS*********/
+
+
+/*********CAROUSEL BEGIN*********/
+.middle-container {
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.carousel {
+    transition: transform 0.5s ease-in-out;
+}
+
+.navigation-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.7);
+    color: #333;
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 16px;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s;
+    z-index: 2;
+}
+
+.navigation-button:hover {
+    color: #45B1E8;
+    background-color: #04080F;
+}
+
+.prev-button {
+    left: 20px;
+    background-color: #0B3142;
+    color: aliceblue;
+}
+
+.next-button {
+    right: 20px;
+    background-color: #0B3142;
+    color: aliceblue;
+    
+}
+
+.dots-container {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: white;
+}
+
+.slide-number {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 14px;
+}
+/*********CAROUSEL END*********/
+
+/*********PRODUCT INFO START*********/
+#product-info button{
+    background-color: #0B3142;
+    color: aliceblue;
+    cursor:pointer;
+}
+
+#product-info button:hover{
+    box-shadow: 2px 2px 2px #0B314266;
+}
+/* Modal */
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 5; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .form-group{
+    color: #04080F;
+  }
+
+/*********PRODUCT INFO END*********/
+
+
+/*********PRODUCT INFO BEGIN*********/
+.product-info{
+
+}
+/*********PRODUCT INFO END*********/
+
+/*********FOOTER BEGIN*********/
+footer{
+    color: aliceblue;
+    background-color: #784F41;
+}
+
+.footer-section i{
+    color: #784F41;
+    
+}
+.footer-logo{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-logo img{
+    width: 50%;
+}
+
+hr{
+    border-top: 1px solid #ccc;
+    margin: 1rem 0;
+    width: 90%;
+    justify-self: center;
+    align-self: center;
+}
+
+.footer-section a div{
+    background-color: aliceblue;
+}
+
+.copyright-footer{
+    font-family: "Bodoni Moda SC",sans-serif;
+    background-color: #784F41;
+}
+.copyright-footer div p{
+    background-color: #784F41;
+}
+
+/*********FOOTER END*********/
+
+/*********T&S*********/
+.TS-header-color{
+    background-color: #784F41;
+}
+/*********T&S*********/

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 1</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./img/RBG_white_background.jpeg">
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="./styles.css">
+    <!-- Carousel Javascript -->
+    <script src="script.js" defer> </script>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/0c00240b03.js" crossorigin="anonymous"></script>
+
+    <!-- Atkinson Hyperlegible Next -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+
+    <!-- Bodoni Moda SC -->
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,200..800;1,200..800&family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CDN -->
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+</head>
+<body>
+    <div id="top"></div>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="sticky top-0 z-50">
+        <div class="container nav-container">
+            <!-- logo -->
+            <div class="logo">
+                <img src="./img/RootBeerGuyw:oback.png" alt="Root Beer Guy logo">
+            </div>
+            <!-- back to home link -->
+            <div class="nav-links">
+                <!-- takes you to the song "home" from undertale -->
+                <a href="https://www.youtube.com/watch?v=J_hJDitrh8M" target="_blank">Back to Home</a>
+            </div>
+            <!-- search bar -->
+            <div class="search-bar">
+                <!-- search bar searches google -->
+                <form action="https://www.google.com/search" method="get" target="_blank">
+                    <input type="text" placeholder="search" name="q" >
+                    <button type="submit"><i class="fa-solid fa-magnifying-glass"></i> </button>
+                </form>
+            </div>
+            <div class="shopping-icon">
+                <!-- Takes you to a clothing brand I like -->
+                <a href="https://www.ussurfco.com" target="_blank"><i class="fa-solid fa-cart-shopping"></i></a>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- END OF NAVIGATION -->
+     
+    <!-- MIDDLE AREA PRODUCT PICTURES AND DETAILS -->
+    <section class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-4">
+            
+            <!-- PHOTO CAROSEL -->
+            <div id="photo-carousel" class="text-center relative h-screen" aria-label="Shirts carousel" data-carousel>
+                <div class="middle-container relative w-full h-11/12">
+                    <div class="carousel flex">
+
+                        <!-- Images -->
+                        <div class="slide h-auto flex justify-center content-center relative min-w-full">
+                            <img  src="./img/Adult T-shirt.png" alt="Adult T-shirt" class="w-full h-full object-cover">
+                            <div class="slide-number">1 / 5</div>
+                        </div>
+
+                        <div class="slide h-auto flex justify-center content-center relative min-w-full">
+                            <img  src="./img/Women T-shirt.png" alt="Women T-shirt" class="w-full h-full object-cover">
+                            <div class="slide-number">2 / 5</div>
+                        </div>
+
+                        <div class="slide h-auto flex justify-center content-center relative min-w-full">
+                            <img  src="./img/Kid T-shirt.png" alt="Kid T-shirt" class="w-full h-full object-cover">
+                            <div class="slide-number">3 / 5</div>
+                        </div>
+
+                        <div class="slide h-auto flex justify-center content-center relative min-w-full">
+                            <img  src="./img/Toddler T-shirt.png" alt="Placeholder Image 4" class="w-full h-full object-cover">
+                            <div class="slide-number">4 / 5</div>
+                        </div>
+
+                        <div class="slide h-auto flex justify-center content-center relative min-w-full">
+                            <img  src="./img/Baby T-shirt.png" alt="Baby T-shirt" class="w-full h-full object-cover">
+                            <div class="slide-number">5 / 5</div>
+                        </div>
+                    </div>
+
+                    <!-- Buttons -->
+                    <button class="navigation-button prev-button">&#10094;</button>
+                    <button class="navigation-button next-button">&#10095;</button>
+                    
+                    <!-- Dots -->
+                    <div class="dots-container">
+                        <span class="dot active" data-index="0"></span>
+                        <span class="dot" data-index="1"></span>
+                        <span class="dot" data-index="2"></span>
+                        <span class="dot" data-index="3"></span>
+                        <span class="dot" data-index="4"></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- WRITTEN INFORMATION -->
+            <div id="product-info">
+                <div class="middle-container relative w-full h-11/12">
+                    <h1 class="text-center text-6xl mt-8">Rootbeer Guy Gray T-shirt</h1>
+                    <ul class="list-disc pl-5 space-y-2 pt-12 my-4">
+                        <li>Official Root Beer Guy t-shirt featuring our iconic mascot design</li>
+                        <li>Ethically sourced and produced with eco-friendly materials</li>
+                        <li>Premium quality, soft cotton blend for maximum comfort</li>
+                        <li>Durable construction that maintains shape and color after washing</li>
+                        <li>Available in multiple sizes for adults, women, kids, toddlers, and babies</li>
+                        <li>Eye-catching design that sparks conversations</li>
+                        <li>Makes a great gift for root beer enthusiasts</li>
+                    </ul>
+                    <div class="grid grid-cols-5 gap-2 mt-16" >
+                        <a href="https://www.klim.com/site/klim/size-chart/int-size-chart.html" target="_blank"><button class="size-btn px-4 py-2 border rounded-md" data-size="S">Baby</button></a>
+                        <a href="https://www.klim.com/site/klim/size-chart/int-size-chart.html" target="_blank"><button class="size-btn px-4 py-2 border rounded-md">Toddler</button></a>
+                         <a href="https://www.klim.com/site/klim/size-chart/int-size-chart.html" target="_blank"><button class="size-btn px-4 py-2 border rounded-md">Child</button></a>
+                        <a href="https://www.klim.com/site/klim/size-chart/int-size-chart.html" target="_blank"><button class="size-btn px-4 py-2 border rounded-md" >Womens</button></a>
+                        <a href="https://www.klim.com/site/klim/size-chart/int-size-chart.html" target="_blank"><button class="size-btn px-4 py-2 border rounded-md">Mens</button></a>
+                    </div>
+
+                    <!-- putting some space above -->
+                    <div class="flex justify-center mt-16">
+                        
+                        <!-- Trigger/Open The Modal -->
+                        <button id="myBtn" class="p-4 w-11/12">Buy Now</button>
+
+                        <!-- The Modal -->
+                        <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <h1 class="text-center text-4xl ">Order form</h1>
+                                <form action="/action_page.php" target="_blank" class="space-y-4">
+
+
+                                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                        <div class="form-group">
+                                            <label for="fname" class="block text-sm font-medium  ">First name</label>
+                                            <input type="text" id="fname" name="fname" class="w-full px-3 py-2 border border-gray-300 rounded-md ">
+                                        </div>
+                                        
+                                        <div class="form-group">
+                                            <label for="lname" class="block text-sm font-medium  ">Last name</label>
+                                            <input type="text" id="lname" name="lname" class="w-full px-3 py-2 border border-gray-300 rounded-md ">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="addy" class="block text-sm font-medium  ">Address</label>
+                                        <input type="text" id="addy" name="address" class="w-full px-3 py-2 border border-gray-300 rounded-md ">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="email" class="block text-sm font-medium  ">Email</label>
+                                        <input type="email" id="email" name="email" class="w-full px-3 py-2 border border-gray-300 rounded-md ">
+                                    </div>
+                                    
+                                    <div class="form-group mt-6">
+                                        <button type="submit" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-md transition duration-200">
+                                            Complete Purchase
+                                        </button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="text-center mb-2" id="back-to-top">
+        <a href="#top">Back To Top</a>
+    </div>
+    <!-- END OF MIDDLE AREA PRODUCT PICTURES AND DETAILS -->
+
+    <!-- FOOTER BEGIN -->
+
+     <footer class="grid grid-rows-auto gap-6">
+        <div class="grid grid-cols-3 justify-around">
+            <!-- logo and tagline -->
+            <div class="footer-section mb-4 relative mt-4">
+                <div class="logo ml-4">
+                    <img src="./img/RootBeerGuyw:oback.png" alt="Root Beer Guy Logo">
+                </div>
+                <p class="max-w-[200px] text-wrap text-center">For the love of Rootbeer</p>
+                
+            </div>
+            
+            <!-- Link Section -->
+            <div class="footer-section footer-links mb-4 mt-4">
+                <h3 class="underline">Quick Links</h3>
+                <ul>
+                    <!-- Links go to Rootbeer facts -->
+                    <li><a href="https://en.wikipedia.org/wiki/Root_beer" target="_blank">About Us</a></li>
+                    <!-- Quick AI helped T&S -->
+                    <li><a href="T&S.html" target="_blank">Terms of Service</a></li>
+                    <!-- No refunds? -->
+                    <li><a href="https://tenor.com/view/no-refunds-gif-25745147" target="_blank">Refund Policy</a></li>
+                </ul>
+            </div>
+
+
+            <!-- Icon Section -->
+            <div class="footer-section flex flex-col items-center gap-4 mt-4">
+                <h3 class="underline ">Connect With Us</h3>
+                
+                <!-- Links go to main pages of the site -->
+                <div class="flex gap-4 justify-center items-center w-full">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center">
+                            <i class="fa-brands fa-instagram text-2xl"></i>
+                        </div>
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center">
+                            <i class="fa-brands fa-facebook text-2xl"></i>
+                        </div>
+                    </a>
+                    <a href="https://x.com/?lang=en&mx=2" target="_blank">
+                        <div class="w-12 h-12 bg-gray-300 rounded-full flex items-center justify-center">
+                            <i class="fa-brands fa-x-twitter text-2xl"></i>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom of the Row  -->
+        <div class="copyright-footer flex flex-col">
+            <hr>
+            <div class=" relative ">
+                <!-- In this section I had conversations with AI about relative and absolute that led me to change from absolute here to relative -->
+                <p class="relative left-[5%]"> &#169; 2025, All Rights Reserved</p>
+            </div>
+        </div>
+     </footer>
+    <!-- FOOTER END -->
+
+
+
+</body>
+</html>
