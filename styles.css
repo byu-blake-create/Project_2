@@ -10,6 +10,21 @@ body{
     font-family: "Atkinson Hyperlegible Next", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: #04080F;
     overflow-x: hidden;
+
+
+/* The image used */
+background-image: url("./img/barrels.webp");
+
+/* Set a specific height */
+min-height: auto;
+
+/* Create the parallax scrolling effect */
+background-attachment: fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+
+
 }
 
 .container {
@@ -158,6 +173,8 @@ body{
     background-color: #04080F;
 }
 
+
+
 .prev-button {
     left: 20px;
     background-color: #0B3142;
@@ -206,9 +223,15 @@ body{
 /*********CAROUSEL END*********/
 
 /*********PRODUCT INFO START*********/
+
+#product-info{
+    background-color: aliceblue;
+    border-radius: 8px;
+}
+
 #product-info button{
     background-color: #0B3142;
-    color: aliceblue;
+    color: white;
     cursor:pointer;
 }
 
