@@ -15,11 +15,10 @@ This project accounts for **10%** of the semester total grade.
 ## Task Breakdown
 
 ### Required Tasks (Up to 35 points)
-❌ **[10pts]** Full mobile responsivity using media queries and flexible layouts (mobile, tablet, and desktop viewports).  
+✅  **[10pts]** Full mobile responsivity using media queries and flexible layouts (mobile, tablet, and desktop viewports).  
 ✅ **[8pts]** Use of **CSS Grid** for at least one major section.  
 ✅ **[7pts]** Implement at least **2 CSS animations** (transitions, keyframes, or transform properties).  
-✅ **[7pts]** Implement at least **2 CSS animations** (transitions, keyframes, or transform properties).  
- **[5pts]** Meet all requirements from the [HTML Semantics Checklist](https://learntheweb.courses/topics/html-semantics-checklist/#boilerplate).  
+✅ **[5pts]** Meet all requirements from the [HTML Semantics Checklist](https://learntheweb.courses/topics/html-semantics-checklist/#boilerplate).  
 ✅ **[3pts]** Create at least **one accessible component** (e.g., form, navigation) using ARIA roles and best practices.  
 ✅ **[2pts]** Initialize or continue a **Git repository**, make regular commits, and deploy the site via **GitHub Pages**.  
 
