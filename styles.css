@@ -149,7 +149,6 @@ background-size: cover;
 .middle-container {
     overflow: hidden;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .carousel {
@@ -234,6 +233,29 @@ background-size: cover;
 #product-info{
     background-color: aliceblue;
     border-radius: 8px;
+    padding: 8px;
+}
+
+.size-button-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 1em; 
+    justify-content: space-around;
+}
+
+.size-btn {
+    display: block;
+    padding: 10px 20px;
+    background-color: #0B3142;
+    color: white;
+    text-align: center;
+    border-radius: 8px;
+    border: 1px solid #0B3142;
+    cursor: pointer;
+}
+
+.size-btn:hover {
+    box-shadow: 2px 2px 2px #0B314266;
 }
 
 #product-info button{
