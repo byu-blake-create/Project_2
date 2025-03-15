@@ -238,7 +238,7 @@ background-size: cover;
 
 .size-button-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); 
     gap: 1em; 
     justify-content: space-around;
 }
@@ -393,8 +393,10 @@ hr{
     position: absolute;
     left: 0;
     width: 100%;
-    height: 100vh; 
+    height: 22vh; 
     background-color: #784F41; 
     z-index: -1; 
+    overflow-y: hidden;
   }
 }
+

@@ -18,23 +18,25 @@ This project accounts for **10%** of the semester total grade.
 ❌ **[10pts]** Full mobile responsivity using media queries and flexible layouts (mobile, tablet, and desktop viewports).  
 ✅ **[8pts]** Use of **CSS Grid** for at least one major section.  
 ✅ **[7pts]** Implement at least **2 CSS animations** (transitions, keyframes, or transform properties).  
-❌ **[5pts]** Meet all requirements from the [HTML Semantics Checklist](https://learntheweb.courses/topics/html-semantics-checklist/#boilerplate).  
+✅ **[7pts]** Implement at least **2 CSS animations** (transitions, keyframes, or transform properties).  
+ **[5pts]** Meet all requirements from the [HTML Semantics Checklist](https://learntheweb.courses/topics/html-semantics-checklist/#boilerplate).  
 ✅ **[3pts]** Create at least **one accessible component** (e.g., form, navigation) using ARIA roles and best practices.  
 ✅ **[2pts]** Initialize or continue a **Git repository**, make regular commits, and deploy the site via **GitHub Pages**.  
 
 ### Optional Tasks (Up to 20 points)
 ❌ **[8pts]** Create a responsive navigation menu that converts to a **hamburger menu** on mobile.  
-❌ **[6pts]** Use two tools or skills taught by peers in UTD presentations (**3pts each**).  
+✅ **[6pts]** Use two tools or skills taught by peers in UTD presentations (**3pts each**).  (z-index and meta viewport tag)
+
 ✅ **[5pts]** Implement a **parallax scrolling effect**.  
-❌ **[5pts]** Use **grid-template-columns: repeat(auto-fill, minmax(size, 1fr))** for an auto-fitting grid layout.  
+✅ **[5pts]** Use **grid-template-columns: repeat(auto-fill, minmax(size, 1fr))** for an auto-fitting grid layout.  
 ❌ **[4pts]** Implement **CSS Grid template areas** for layout and reorganization at different breakpoints.  
 ❌ **[4pts]** Create a **dark mode toggle** using CSS custom properties (variables).  
-❌ **[2pts]** Implement a **sticky element** using `position: sticky`.  
-❌ **[2pts]** Use `object-fit` for responsive image handling.  
-❌ **[2pts]** Use CSS Grid's **named lines feature** for a complex layout.  
+✅ **[2pts]** Implement a **sticky element** using `position: sticky`.  
+✅ **[2pts]** Use `object-fit` for responsive image handling.  
+✅ **[2pts]** Use CSS Grid's **named lines feature** for a complex layout.  
 ❌ **[2pts]** Implement **smooth scrolling behavior** site-wide or for specific elements.  
 ✅ **[1pt]** Use the **CSS `gap` property** effectively with Grid and Flexbox.  
-❌ **[1pt]** Add **custom focus states** to interactive elements for keyboard accessibility.  
+✅ **[1pt]** Add **custom focus states** to interactive elements for keyboard accessibility.  
 
 ## AI Usage Policy
 AI usage is **encouraged**, but must be used **wisely and responsibly**.  
