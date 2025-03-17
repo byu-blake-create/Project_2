@@ -236,6 +236,8 @@ background-size: cover;
     padding: 8px;
 }
 
+
+
 .size-button-grid {
     display: grid;
     grid-template-columns:repeat(auto-fit, minmax(150px, 1fr)); 
@@ -254,8 +256,15 @@ background-size: cover;
     cursor: pointer;
 }
 
+@keyframes bounce {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-1vh);}
+    100% {transform: translateY(0);}
+}
+
 .size-btn:hover {
     box-shadow: 2px 2px 2px #0B314266;
+    animation: bounce 1s infinite ease-in-out;
 }
 
 #product-info button{
@@ -266,6 +275,7 @@ background-size: cover;
 
 #product-info button:hover{
     box-shadow: 2px 2px 2px #0B314266;
+    animation: bounce 1s infinite ease-in-out;
 }
 /* Modal */
 /* The Modal (background) */
@@ -400,3 +410,6 @@ hr{
   }
 }
 
+
+
+/* animation: name duration timing-funciton iteration-count */
