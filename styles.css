@@ -12,17 +12,13 @@ body{
     overflow-x: hidden;
 
 
-/* The image used */
-background-image: url("./img/barrels.webp");
-
-/* Set a specific height */
-min-height: auto;
-
-/* Create the parallax scrolling effect */
-background-attachment: fixed;
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+    /* Parallax */
+    background-image: url("./img/barrels.webp");
+    min-height: auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
 
 }
@@ -129,6 +125,16 @@ background-size: cover;
 }
 
 /* Shopping Icon */
+@keyframes go-kart {
+    0%{transform: translateX(0px); opacity: 1;}
+    20%{transform: translateX(10px); opacity: 0.5;}
+    40%{transform: translateX(20px); opacity: 0;}
+    60%{transform: translateX(-20px);opacity: 0;}
+    80%{transform: translateX(10px);opacity: 0.5;}
+    100%{transform: translateX(0px); opacity: 1;}
+}
+
+
 .shopping-icon {
     display: flex;
     align-items: center;
@@ -139,6 +145,13 @@ background-size: cover;
     color: white;
     font-size: 1.5rem;
     cursor: pointer;
+}
+
+
+.shopping-icon i:hover,
+.shopping-icon, 
+.shopping-icon a:hover i {
+  animation: go-kart 1s ease 1 ease-in-out !important;
 }
 
 
