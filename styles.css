@@ -187,7 +187,7 @@ body{
 }
 
 .navigation-button:hover {
-    color: #45B1E8;
+    color: #C6A195;
     background-color: #04080F;
 }
 
@@ -195,14 +195,14 @@ body{
 
 .prev-button {
     left: 20px;
-    background-color: #0B3142;
-    color: #e3e2df;
+    background-color: #C6A195;
+    color: #040910;
 }
 
 .next-button {
     right: 20px;
-    background-color: #0B3142;
-    color: #e3e2df;
+    background-color: #C6A195;
+    color: #040910;
     
 }
 
@@ -260,11 +260,12 @@ body{
 .size-btn {
     display: block;
     padding: 10px 20px;
-    background-color: #0B3142;
-    color: white;
+    background-color: #C6A195;
+    color: #040910;
+    font-weight: 600;
     text-align: center;
     border-radius: 8px;
-    border: 1px solid #0B3142;
+    border: 1px solid #C6A195;
     cursor: pointer;
 }
 
@@ -275,18 +276,19 @@ body{
 }
 
 .size-btn:hover {
-    box-shadow: 2px 2px 2px #0B314266;
+    box-shadow: 2px 2px 2px #C6A19566;
     animation: bounce 1s infinite ease-in-out;
 }
 
 #product-info button{
-    background-color: #0B3142;
-    color: white;
+    background-color: #C6A195;
+    color: #040910;
+    font-weight: 600;
     cursor:pointer;
 }
 
 #product-info button:hover{
-    box-shadow: 2px 2px 2px #0B314266;
+    box-shadow: 2px 2px 2px #C6A19566;
     animation: bounce 1s infinite ease-in-out;
 }
 /* Modal */
