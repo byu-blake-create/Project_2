@@ -130,7 +130,7 @@ body{
     20%{transform: translateX(10px); opacity: 0.5;}
     40%{transform: translateX(20px); opacity: 0;}
     60%{transform: translateX(-20px);opacity: 0;}
-    80%{transform: translateX(10px);opacity: 0.5;}
+    80%{transform: translateX(-10px);opacity: 0.5;}
     100%{transform: translateX(0px); opacity: 1;}
 }
 
@@ -148,11 +148,10 @@ body{
 }
 
 
-.shopping-icon i:hover,
-.shopping-icon, 
 .shopping-icon a:hover i {
-  animation: go-kart 1s ease 1 ease-in-out !important;
-}
+    animation: go-kart 1s linear;
+    animation-fill-mode: both;
+    }
 
 
 /*********NAVIGATION ENDS*********/
