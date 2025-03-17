@@ -196,13 +196,13 @@ body{
 .prev-button {
     left: 20px;
     background-color: #0B3142;
-    color: aliceblue;
+    color: #e3e2df;
 }
 
 .next-button {
     right: 20px;
     background-color: #0B3142;
-    color: aliceblue;
+    color: #e3e2df;
     
 }
 
@@ -243,7 +243,7 @@ body{
 /*********PRODUCT INFO START*********/
 
 #product-info{
-    background-color: aliceblue;
+    background-color: #e3e2df;
     border-radius: 8px;
     padding: 8px;
 }
@@ -343,7 +343,7 @@ body{
 
 /*********FOOTER BEGIN*********/
 footer{
-    color: aliceblue;
+    color: #e3e2df;
     background-color: #784F41;
 }
 
@@ -369,7 +369,7 @@ hr{
 }
 
 .footer-section a div{
-    background-color: aliceblue;
+    background-color: #e3e2df;
 }
 
 .copyright-footer{
